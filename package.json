@@ -1,0 +1,10 @@
+{
+  "name": "vue3-ui",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    
+  }
+}
