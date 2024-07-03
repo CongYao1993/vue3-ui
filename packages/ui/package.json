@@ -21,14 +21,12 @@
         "build": "vite build",
         "test": "echo test"
     },
-    "main": "",
-    "module": "",
-    "types": "",
+    "main": "./dist/vue3ui-ui.umd.js",
+    "module": "./dist/vue3ui-ui.mjs",
     "exports": {
         ".": {
-            "require": "",
-            "module": "",
-            "types": ""
+            "require": "./dist/vue3ui-ui.umd.js",
+            "module": "./dist/vue3ui-ui.mjs"
         }
     },
     "files": [

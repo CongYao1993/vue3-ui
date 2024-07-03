@@ -1,0 +1,13 @@
+{
+    "name": "@vue3ui/demo",
+    "private": true,
+    "scripts": {
+      "dev": "vite dev"
+    },
+    "dependencies": {
+      "@vue3ui/ui": "workspace:^"
+    },
+    "devDependencies": {
+    }
+  }
+  

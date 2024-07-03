@@ -25,6 +25,12 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3(sass@1.77.6)
 
+  demo:
+    dependencies:
+      '@vue3ui/ui':
+        specifier: workspace:^
+        version: link:../packages/ui
+
   docs: {}
 
   packages/button:
@@ -49,7 +55,7 @@ importers:
     dependencies:
       '@vue3ui/button':
         specifier: workspace:^
-        version: 'link:'
+        version: link:../button
       '@vue3ui/input':
         specifier: workspace:^
         version: link:../input
