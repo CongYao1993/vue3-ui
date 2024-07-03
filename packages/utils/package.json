@@ -7,28 +7,26 @@
         "ui",
         "component library"
     ],
-    "author": "OpenX",
+    "author": "yaocong",
     "license": "MIT",
-    "homepage": "https://github.com/gkn1234/openx-ui/blob/master/README.md",
+    "homepage": "https://github.com/CongYao1993/vue3-ui/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/gkn1234/openx-ui.git"
+        "url": "git+https://github.com/CongYao1993/vue3-ui.git"
     },
     "bugs": {
-        "url": "https://github.com/gkn1234/openx-ui/issues"
+        "url": "https://github.com/CongYao1993/vue3-ui/issues"
     },
     "scripts": {
-        "build": "echo build",
+        "build": "vite build",
         "test": "echo test"
     },
-    "main": "",
-    "module": "",
-    "types": "",
+    "main": "./dist/vue3ui-utils.umd.js",
+    "module": "./dist/vue3ui-utils.mjs",
     "exports": {
         ".": {
-            "require": "",
-            "module": "",
-            "types": ""
+            "require": "./dist/vue3ui-utils.umd.js",
+            "module": "./dist/vue3ui-utils.mjs"
         }
     },
     "files": [
@@ -38,6 +36,8 @@
     "peerDependencies": {
         "vue": ">=3.0.0"
     },
-    "dependencies": {},
-    "devDependencies": {}
+    "dependencies": {
+        "@types/lodash": "^4.17.6",
+        "lodash": "^4.17.21"
+    }
 }
