@@ -2,15 +2,22 @@
   "name": "vue3-ui",
   "private": true,
   "scripts": {
-    "build:ui": "pnpm --filter './packages/**' run build",
+    "clean:type": "rimraf ./dist",
+    "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
+    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
+    "mv-type": "tsx ./scripts/dts-mv.ts",
+    "build:ui": "pnpm run type:src && pnpm --filter './packages/**' run build && pnpm run mv-type",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@types/node": "^20.14.9",
     "@vitejs/plugin-vue": "^5.0.5",
+    "rimraf": "^5.0.7",
     "sass": "^1.77.6",
+    "tsx": "^4.16.2",
     "typescript": "^5.5.3",
-    "vite": "^5.3.3"
+    "vite": "^5.3.3",
+    "vue-tsc": "^2.0.26"
   },
   "dependencies": {
     "vue": "^3.4.31"

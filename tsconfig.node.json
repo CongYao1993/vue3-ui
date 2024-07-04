@@ -12,6 +12,7 @@
     },
     "include": [
         "**/*.config.*",
+        "scripts"
     ],
     "exclude": [
         "**/dist",

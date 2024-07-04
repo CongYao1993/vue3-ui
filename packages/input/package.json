@@ -23,10 +23,12 @@
     },
     "main": "./dist/vue3ui-input.umd.js",
     "module": "./dist/vue3ui-input.mjs",
+    "types": "./dist/index.d.ts",
     "exports": {
         ".": {
             "require": "./dist/vue3ui-input.umd.js",
-            "module": "./dist/vue3ui-input.mjs"
+            "module": "./dist/vue3ui-input.mjs",
+            "types": "./dist/index.d.ts"
         }
     },
     "files": [
