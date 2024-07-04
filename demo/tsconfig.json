@@ -1,0 +1,24 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "lib": [
+            "ESNext",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "types": [],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@vue3ui/*": [
+                "../packages/*/src"
+            ]
+        }
+    },
+    "include": [
+        "../packages/*/src",
+        "src"
+    ]
+}

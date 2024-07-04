@@ -6,6 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/node": "^20.14.9",
     "@vitejs/plugin-vue": "^5.0.5",
     "sass": "^1.77.6",
     "typescript": "^5.5.3",
